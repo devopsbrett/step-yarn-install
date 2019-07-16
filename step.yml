@@ -1,0 +1,19 @@
+name: yarn-install
+version: 1.0.0
+summary: yarn-install step
+tags:
+- yarn
+- node
+- javascript
+properties:
+- name: clear-cache-on-failed
+  type: bool
+  default: true
+  required: false
+- name: use-cache
+  type: bool
+  default: true
+  required: false
+- name: options
+  type: string
+  required: false
