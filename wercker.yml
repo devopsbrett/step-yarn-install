@@ -1,9 +1,10 @@
-box: alpine
+box: debian:stretch-slim
 
 build:
   steps:
     - shellcheck:
       files: run.sh
+      shell: bash
 
     - script:
       name: prepare output
