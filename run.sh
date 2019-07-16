@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 
 main() {
   if [ "$WERCKER_YARN_INSTALL_USE_CACHE" == "true" ]; then
