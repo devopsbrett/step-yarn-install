@@ -2,6 +2,12 @@ box: alpine
 
 build:
   steps:
+    - shellcheck:
+      files: run.sh
+
+    - script:
+      name: prepare output
+      code: rm -Rf $WERCKER_ROOT/.git
 
 publish:
   steps:
